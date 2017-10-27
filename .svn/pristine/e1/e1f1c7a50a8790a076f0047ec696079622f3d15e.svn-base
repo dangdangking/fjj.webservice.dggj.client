@@ -1,0 +1,11 @@
+jdbc.url=jdbc:oracle:thin:@10.126.22.213:1521:dev11g
+jdbc.user=dggj
+jdbc.passwd=111
+pool.initialSize=7
+pool.minPoolSize=7
+pool.maxPoolSize=300
+pool.acquireIncrement=5
+pool.idleConnectionTestPeriod=60
+pool.maxIdleTime=60
+pool.autoCommitOnClose=false
+pool.checkoutTimeout=20

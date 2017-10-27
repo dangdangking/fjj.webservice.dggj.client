@@ -1,0 +1,32 @@
+log4j.rootLogger=INFO, A1
+
+#log4j.logger.org.hibernate=WARN, A2
+log4j.logger.org.springframework=INFO, A2
+#log4j.logger.com.mchange=WARN, A2
+#log4j.logger.com.spt.bank=DEBUG, A2
+#log4j.logger.com.spt.bank.platform.web.sys=DEBUG, A3
+#log4j.logger.net.zacks.project.phoebus=DEBUG, A4
+#log4j.logger.net.zacks.project.phoebus.service.PreprocessorServiceImpl=INFO, A4
+#log4j.logger.com.spt.o2o=DEBUG, A5
+#log4j.logger.com.spt.weims=DEBUG, A5
+
+#log4j.appender.A1=org.apache.log4j.ConsoleAppender
+log4j.appender.A2=org.apache.log4j.RollingFileAppender
+log4j.appender.A1.layout=org.apache.log4j.PatternLayout
+log4j.appender.A1.layout.ConversionPattern=%d [%t] %-5p %c - %m%n
+log4j.appender.A2.File=e:\\logs\\server.log
+log4j.appender.A2.MaxFileSize=10000KB
+log4j.appender.A2.BufferedIO=true
+log4j.appender.A2.BufferSize=8192
+
+# Print the date in ISO 8601 format
+log4j.appender.A2=org.apache.log4j.RollingFileAppender
+# Keep one backup file
+log4j.appender.A2.MaxBackupIndex=1
+log4j.appender.A2.layout=org.apache.log4j.PatternLayout
+log4j.appender.A2.layout.ConversionPattern=%d [%t] %-5p (%F:%L) - %m%n
+log4j.appender.A2.File=e:\\logs\\server-base.log
+log4j.appender.A2.MaxFileSize=1000KB
+log4j.appender.A2.BufferedIO=true
+log4j.appender.A2.BufferSize=8192
+

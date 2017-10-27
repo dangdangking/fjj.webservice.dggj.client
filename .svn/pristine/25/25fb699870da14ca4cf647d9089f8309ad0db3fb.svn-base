@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="FjjService-dggj-client">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/" source-path="/WebRoot"/>
+        <property name="context-root" value="FjjService-dggj-client"/>
+        <property name="java-output-path" value="/FjjService-dggj-client/WebRoot/WEB-INF/classes"/>
+    </wb-module>
+</project-modules>
